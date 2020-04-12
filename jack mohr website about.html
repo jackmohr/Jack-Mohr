@@ -24,7 +24,7 @@
 	    <a href="#top">About</a>
 	</div>
 
-	<img src="Jacks_Photos/jack mohr headshot.jpg">
+	<img class="jack_head" src="Jacks_Photos/jack mohr headshot.jpg">
 
 	<div class="about" id="about">
 		<p>I specialize in street, product, and portrait photography. I have been lucky to see so much of the world having come from a military family,
@@ -96,7 +96,7 @@
 			  
 			  line-height: 3;}
 
-			img {
+			.jack_head img {
 
 				width: 40%;
 				max-width: 40%;
@@ -128,9 +128,9 @@
 			.icon:hover .icon-text {visibility: visible; color: white;}
 
 			@media only screen and (max-width: 600px) 
-			{img {top: 0vh; left: 30vw; width: 50%}
-				.logo img {top: 10vh;}
-				.about {top: 40vh; left: 20vw; width: 70vw; padding-top: 0; font-size: 26px;}}
+			{.jack_head {text-align: center; width: 50%}
+				.logo img {top: 10vh; width: 100px;}
+				.about {text-align: center; width: 70vw; padding-top: 0; font-size: 26px;}}
 				
 			@media only screen and (max-width: 1000px) 
 			{.about {font-size: 14px; line-height: 1.5; padding-top: 5vh;}}
