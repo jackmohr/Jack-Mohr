@@ -166,34 +166,6 @@
 		@keyframes zoom {
 		  from {transform:scale(0)} 
 		  to {transform:scale(1)}}
-		
-		.left_arrow {
-			position: absolute;
-			top: 48vh;
-			left: 13vw;
-			color: #000;
-			font-size: 20px;
-			user-select: none;}
-
-		.left_arrow:hover,
-		.left_arrow:focus {
-			color: gray;
-			text-decoration: none;
-			cursor: pointer;}
-
-		.right_arrow {
-			position: absolute;
-			right: 50px;
-			top: 48vh;
-			color: #000;
-			font-size: 20px;
-			user-select: none;}
-
-		.right_arrow:hover,
-		.right_arrow:focus {
-			color: gray;
-			text-decoration: none;
-			cursor: pointer;}
 
 		.close {
 		  position: absolute;
@@ -268,7 +240,7 @@
 <!------------------------------------------------------MODAL BODY---------------------------------------------------->
 
 	<div class="modal" id="myModal" onkeypress="DownToFuck()">
-	  <img class="modal-content" id="modal-image">
+	  <img class="modal-content" id="modal-image" onclick="ChangeImage(1)">
 		<a class="close" onclick="close_modal()">&Xopf;</a>
 		<a class="left_arrow" onclick="ChangeImage(-1)"> ❮ </a>
 		<a class="right_arrow" onclick="ChangeImage(1)"> ❯ </a>
