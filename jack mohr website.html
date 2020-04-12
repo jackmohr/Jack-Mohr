@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+	<title>MOHR PHOTOS</title>
+	<link rel="icon" href="Jacks_Photos/jack mohr icon.png">
+</head>
+	
+<body onload="scrollWin()"> 
+
+	<div class="logo" id="logo">
+		<a href="jack mohr website.html">
+		<img src="Jacks_Photos/jack mohr logo.png" alt="logo"></div>
+
+	<div class="sidenav1" id="sidenav1">
+		<a href="#top">Home</a>
+	    <a style="cursor: pointer;" onclick="LetsGetFaded()">Portfolio</a>
+	    <a href="jack mohr website about.html">About</a></div>
+
+	<div class="Home" id="Home">
+		<img src="Jack Photos Uncropped/Jack_Image10.jpg" alt="Sweet Pic Bro"></div>
+
+<style>
+	html {
+		height: 100vh; 
+		user-select: none;}
+
+	body {
+		font-family: "geosanslightregular";
+		height: 100%;
+		width: 100%;
+		overflow: hidden;}
+
+	.logo {
+		position: fixed;
+		width: 15vw;
+		top: 11vh;
+		left: 10vw;
+		z-index: 2;}
+
+	.logo img {width: 5vw;}
+
+	.sidenav1 {
+	  float: left;
+	  height: 100%;
+	  width: 10vw;
+	  position: fixed;
+	  z-index: 1;
+	  top: 30vh;
+	  left: 0vw;
+	  padding-left: 10vw;}
+
+	.sidenav1 a {
+	  padding: 1vh 0 1vh 0;
+	  text-decoration: none;
+	  color: black;
+	  font-size: 18px;
+	  display: block;
+	  text-decoration: none;
+	  font-weight: bold;}
+
+	.sidenav1 a:hover {color: hotpink;}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 40vh;}
+	  .sidenav a {font-size: 18px;}}
+
+	.Home img {
+		position: absolute;
+		left: 25vw;
+		top: 0;			
+		width: 75vw;
+		height: auto;
+		max-width: 75vw;
+		-webkit-animation: fadein 6s; 
+       -moz-animation: fadein 6s; 
+	-ms-animation: fadein 6s; 
+	 -o-animation: fadein 6s; 
+	    animation: fadein 6s;}
+
+
+	@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }}
+	@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }}
+
+	@font-face {
+    font-family: "geosanslightregular";
+    src: url("fonts/geosanslight.woff2") format('woff2'),
+    url("fonts/geosanslight.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;}
+	@font-face {
+    font-family: "geosanslightmedium_italic";
+    src: url("fonts/geosanslight-oblique.woff2") format('woff2'),
+    url("fonts/geosanslight-oblique.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;}
+			
+</style>
+
+	<script>	
+		function scrollWin() {window.scrollTo(0,0);}
+
+		function LetsGetFaded() {
+			setTimeout(function() {
+				document.body.style.animation = 'fadeout .5s';
+	       		document.body.style.WebkitAnimation = 'fadeout .5s';
+	       			setTimeout(function() {
+	       				window.location.href = 'jack mohr website portfolio.html'}
+	       		,450);}
+	       	,0);}
+	</script>
+</body>
+</html>
