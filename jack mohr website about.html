@@ -3,190 +3,174 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
 <head>
 	<title>ABOUT</title>
 	<link rel="icon" href="Jacks_Photos/jack mohr icon.png">
 </head>
 	
-
 <body onload="scrollWin()"> 
 
 	<div class="logo" id="logo">
 		<a href="index.html">
-		<img src="Jacks_Photos/jack mohr logo2.png" alt="logo"></a>
-	</div>
+			<img src="Jacks_Photos/jack mohr logo2.png" alt="logo"></a></div>
 
 	<div class="sidenav1" id="sidenav1">
 		<a href="index.html">Home</a>
 	    <a style="cursor: pointer;" onclick="LetsGetFaded()">Portfolio</a>
-	    <a href="#top">About</a>
-	</div>
+	    <a href="#top">About</a></div>
 	
 	<div class="jack_head">
 		<img src="Jacks_Photos/jack mohr headshot.jpg"></div>
 
 	<div class="about" id="about">
 		<p>I specialize in street, product, and portrait photography. I have been lucky to see so much of the world having come from a military family,
-		and this travel has inspired me to capture all of the beautiful things I see.</p>
-	</div>
+		and this travel has inspired me to capture all of the beautiful things I see.</p></div>
 
 	<div><a class="iconA" href="mailto:jackmohr@gmail.com">
 			<i class="fa fa-envelope"></i></a>
 		<a class="iconB" href="https://www.instagram.com/mohrphotos/" target="_blank">
-			<i class="fa fa-instagram"></i></a>
-	</div>
+			<i class="fa fa-instagram"></i></a></div>
 
+<style>	
+	html {height: 100vh; 
+	      user-select: none;}
 
-<style>
-			
-			html {
-				height: 100vh; 
-				user-select: none;}
+	body {
+		font-family: "geosanslightregular";
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		background-color: black;}
 
-			body {
-				font-family: "geosanslightregular";
-				height: 100%;
-				width: 100%;
-				overflow: hidden;
-				background-color: black;}
+	.logo {
+		position: absolute;
+		top: 100px;
+		left: 10vw;
+		z-index: 1;}
 
-			.logo {
-				position: absolute;
-				top: 100px;
-				left: 10vw;
-				z-index: 1;}
+	.logo img {width: 80px;}
 
-			.logo img {width: 80px;}
+	.sidenav1 {
+	  float: left;
+	  height: 100%;
+	  width: 5vw;
+	  position: fixed;
+	  z-index: 1;
+	  top: 32vh;
+	  left: 10vw;}
 
-			.sidenav1 {
-			  float: left;
-			  height: 100%;
-			  width: 5vw;
-			  position: fixed;
-			  z-index: 1;
-			  top: 32vh;
-			  left: 10vw;}
+	.sidenav1 a {
+	  padding: 1vh 0 1vh 0;
+	  text-decoration: none;
+	  color: white;
+	  font-size: 18px;
+	  display: block;
+	  text-decoration: none;}
 
-			.sidenav1 a {
-			  padding: 1vh 0 1vh 0;
-			  text-decoration: none;
-			  color: white;
-			  font-size: 18px;
-			  display: block;
-			  text-decoration: none;}
+	.sidenav1 a:hover {color: hotpink;}	
 
-			.sidenav1 a:hover {color: hotpink;}	
+	.about {
+	  text-align: left;
+	  font-size: 22px;
+	  color: white;
+	  height: 100%;
+	  width: 28vw;
+	  position: relative;
+	  top: 8vh;
+	  left: 24vw;
+	  padding-right: 30px;
+	  line-height: 3;}
 
-			.about {
-			  text-align: left;
-			  font-size: 22px;
-			  color: white;
-			  height: 100%;
-			  width: 28vw;
-			  position: relative;
-			  top: 8vh;
-			  left: 24vw;
-			
-			  padding-right: 30px;
-			  line-height: 3;}
-	
-			.jack_head {
-				top: 0vh; 
-				right: 0vw; 
-				position: absolute;
-				display: inline-block;}
+	.jack_head {
+		top: 0vh; 
+		right: 0vw; 
+		position: absolute;
+		display: inline-block;}
 
-			.jack_head img {
+	.jack_head img {
+		width: 40vw;
+		max-width: 40vw;
+		height: auto;}
 
-				width: 40vw;
-				max-width: 40vw;
-				height: auto;}
+	.iconA {
+		position: absolute;
+		top: 440px;
+		left: 24.7vw;
+		color: hotpink;}
 
-		
-			.iconA {
-				position: absolute;
-				top: 440px;
-				left: 24.7vw;
-				color: hotpink;}
-	
-			.iconB {
-				position: absolute;
-				top: 440px;
-				left: 26.7vw;
-				color: hotpink;}
+	.iconB {
+		position: absolute;
+		top: 440px;
+		left: 26.7vw;
+		color: hotpink;}
 
-			.iconA:hover, .iconB:hover {color: purple;}
-			.iconA:hover .icon-textA {visibility: visible; color: white;}
-			.iconB:hover .icon-textB {visibility: visible; color: white;}
-				
-		@media screen and (max-height: 700px) {
-			.logo img {width: 50px; margin-top: 10px;}
-			.sidenav a {font-size: 14px;}
-			.about {font-size: 16px; line-height: 2; top: 36vh; left: 30vw; width: 55vw;}
-			.jack_head {margin-top: 10vh; width: 60vw; max-width:80vw; height: auto;}
-			.iconA {top: 520px; left: 55vw;}
-			.iconB {top: 520px; left: 63vw;}}
+	.iconA:hover, .iconB:hover {color: purple;}
 
-			@font-face {
-		    font-family: "geosanslightregular";
-		    src: url("fonts/geosanslight.woff2") format('woff2'),
-	        url("fonts/geosanslight.woff") format('woff');
-		    font-weight: normal;
-		    font-style: normal;
-			}
-			@font-face {
-		    font-family: "geosanslightmedium_italic";
-		    src: url("fonts/geosanslight-oblique.woff2") format('woff2'),
-		    url("fonts/geosanslight-oblique.woff") format('woff');
-		    font-weight: normal;
-		    font-style: normal;
-			}
+@media screen and (max-height: 700px) {
+	.logo img {width: 50px; margin-top: 10px;}
+	.sidenav a {font-size: 14px;}
+	.about {font-size: 16px; line-height: 2; top: 36vh; left: 30vw; width: 55vw;}
+	.jack_head {margin-top: 10vh; width: 60vw; max-width:80vw; height: auto;}
+	.iconA {top: 520px; left: 55vw;}
+	.iconB {top: 520px; left: 63vw;}}
 
-			@keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-			}
-			@-moz-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-			}
-			@-webkit-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-			}
-			@-ms-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-			}
-			@-o-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-			}
-			@keyframes fadeout {
-		    from { opacity: 1; }
-		    to   { opacity: 0; }
-			}
-			@-webkit-keyframes fadeout {
-		    from { opacity: 1; }
-		    to   { opacity: 0; }
-			}
+@font-face {
+    font-family: "geosanslightregular";
+    src: url("fonts/geosanslight.woff2") format('woff2'),
+    url("fonts/geosanslight.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "geosanslightmedium_italic";
+    src: url("fonts/geosanslight-oblique.woff2") format('woff2'),
+    url("fonts/geosanslight-oblique.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-		</style>
+	@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+	@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+	@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+	@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+	@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+	@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+	}
+	@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+	}
 
-		<script>	
-			function scrollWin() {window.scrollTo(0,0);}
+</style>
+	<script>	
+	function scrollWin() {window.scrollTo(0,0);}
 
-			function LetsGetFaded() {
-				setTimeout(function() {
-					document.body.style.animation = 'fadeout 2s';
-		       		document.body.style.WebkitAnimation = 'fadeout 2s';
-		       		
-		       		setTimeout(function() {
-		       			window.location.href = 'jack mohr website portfolio.html'}
-		       		,1900);}
-		       	,0);}
+	function LetsGetFaded() {
+		setTimeout(function() {
+			document.body.style.animation = 'fadeout 2s';
+		document.body.style.WebkitAnimation = 'fadeout 2s';
+
+		setTimeout(function() {
+			window.location.href = 'jack mohr website portfolio.html'}
+		,1900);}
+	,0);}
 	</script>
 </body>
 </html>
