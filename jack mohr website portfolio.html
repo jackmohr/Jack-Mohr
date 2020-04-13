@@ -10,25 +10,24 @@
 </head>
 
 <style>
-
 	html {
 		height: 100vh; 
 		scroll-behavior: smooth;
 		overflow-x: hidden;
 		user-select: none;}
-
+	
 	body {
 		font-family: "geosanslightregular";
 		height: 100%;
 		width: 100%;
 		background-color: black;}
-
+	
 	.logo {
 		position: fixed;
 		top: 100px;
 		left: 10vw;
 		z-index: 1;}
-
+	
 	.logo img 
 		{width: 80px;
     -webkit-animation: fadein 2s; 
@@ -74,121 +73,121 @@
 
 /*------------------------------------------------------GALLERY----------------------------------------------------*/
 
-		.main {
-		  margin-left: 24.2vw;
-		  padding-right: 25vw;	
-		  background-color: white;
-		  z-index: 2;
-		  	-webkit-animation: fadein 4s;
-		       -moz-animation: fadein 4s;
-			-ms-animation: fadein 4s; 
-			 -o-animation: fadein 4s; 
-			    animation: fadein 4s;}
+	.main {
+	  margin-left: 24.2vw;
+	  padding-right: 25vw;	
+	  background-color: white;
+	  z-index: 2;
+		-webkit-animation: fadein 4s;
+	       -moz-animation: fadein 4s;
+		-ms-animation: fadein 4s; 
+		 -o-animation: fadein 4s; 
+		    animation: fadein 4s;}
 
-		.main img {
-		  width: 100%;
-		  height: auto;
-		  padding: .15vh .1vw;}
+	.main img {
+	  width: 100%;
+	  height: auto;
+	  padding: .15vh .1vw;}
 
-		* {box-sizing: border-box;}
+	* {box-sizing: border-box;}
 
-		.responsive {
-		  float: left;
-		  display: inline-table;
-		  width: 24.999%;}
+	.responsive {
+	  float: left;
+	  display: inline-table;
+	  width: 24.999%;}
 
-		@media only screen and (max-width: 1300px) 
-			{.responsive {width: 33.33332%;}}
-		@media only screen and (max-width: 1100px) 
-			{.responsive {width: 49.99999%;}}
-		@media only screen and (max-width: 650px) 
-			{.responsive {width: 100%;}}
+	@media only screen and (max-width: 1300px) 
+		{.responsive {width: 33.33332%;}}
+	@media only screen and (max-width: 1100px) 
+		{.responsive {width: 49.99999%;}}
+	@media only screen and (max-width: 650px) 
+		{.responsive {width: 100%;}}
 
-		@keyframes fadein {
-	    from { opacity: 0; }
-	    to   { opacity: 1; }}
-		@-moz-keyframes fadein {
-	    from { opacity: 0; }
-	    to   { opacity: 1; }}
-		@-webkit-keyframes fadein {
-	    from { opacity: 0; }
-	    to   { opacity: 1; }}
-		@-ms-keyframes fadein {
-	    from { opacity: 0; }
-	    to   { opacity: 1; }}
-		@-o-keyframes fadein {
-	    from { opacity: 0; }
-	    to   { opacity: 1; }}
-		@keyframes fadeout {
-	    from { opacity: 1; }
-	    to   { opacity: 0; }}
-		@-webkit-keyframes fadeout {
-	    from { opacity: 1; }
-	    to   { opacity: 0; }}
+	@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }}
+	@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }}
+	@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }}
 
 /*------------------------------------------------------MODAL STYLE----------------------------------------------------*/
 
-		#myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12 {cursor: pointer;}
-		  
-		#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover {opacity: 0.9;}
-		
-		.modal {
-		  position: fixed;
-		  display: none;
-		  top: 0;
-		  left: 24vw;
-		  width: 100%;
-		  height: 100%; 
-		  background-color: rgb(255,255,255); 
-		  background-color: rgba(255,255,255,1);}
+	#myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12 {cursor: pointer;}
 
-		.modal-content {
-		  position: relative;
-		  margin-top: 5vh;
-		  margin-left: 16vw;
-		  display: block;
-		  width: 34%;
-		  height: auto;}
+	#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover {opacity: 0.9;}
 
-		.modal-content {  
-		  -webkit-animation-name: zoom;
-		  -webkit-animation-duration: 0.3s;
-		  animation-name: zoom;
-		  animation-duration: 0.3s;}
-		@-webkit-keyframes zoom {
-		  from {-webkit-transform:scale(0)} 
-		  to {-webkit-transform:scale(1)}}
-		@keyframes zoom {
-		  from {transform:scale(0)} 
-		  to {transform:scale(1)}}
+	.modal {
+	  position: fixed;
+	  display: none;
+	  top: 0;
+	  left: 24vw;
+	  width: 100%;
+	  height: 100%; 
+	  background-color: rgb(255,255,255); 
+	  background-color: rgba(255,255,255,1);}
 
-		.close {
-		  position: absolute;
-		  top: 4.5vh;
-		  right: 40vw;
-		  color: #000;
-		  font-size: 15px;
-		  font-weight: bold;
-		  user-select: none;}
+	.modal-content {
+	  position: relative;
+	  margin-top: 5vh;
+	  margin-left: 16vw;
+	  display: block;
+	  width: 34%;
+	  height: auto;}
 
-		.close:hover,
-		.close:focus {
-		  color: gray;
-		  text-decoration: none;
-		  cursor: pointer;}
+	.modal-content {  
+	  -webkit-animation-name: zoom;
+	  -webkit-animation-duration: 0.3s;
+	  animation-name: zoom;
+	  animation-duration: 0.3s;}
+	@-webkit-keyframes zoom {
+	  from {-webkit-transform:scale(0)} 
+	  to {-webkit-transform:scale(1)}}
+	@keyframes zoom {
+	  from {transform:scale(0)} 
+	  to {transform:scale(1)}}
 
-		@font-face {
-		    font-family: "geosanslightregular";
-		    src: url("fonts/geosanslight.woff2") format('woff2'),
-	        url("fonts/geosanslight.woff") format('woff');
-		    font-weight: normal;
-		    font-style: normal;}
-		@font-face {
-		    font-family: "geosanslightmedium_italic";
-		    src: url("fonts/geosanslight-oblique.woff2") format('woff2'),
-		    url("fonts/geosanslight-oblique.woff") format('woff');
-		    font-weight: normal;
-		    font-style: normal;}
+	.close {
+	  position: absolute;
+	  top: 4.5vh;
+	  right: 40vw;
+	  color: #000;
+	  font-size: 15px;
+	  font-weight: bold;
+	  user-select: none;}
+
+	.close:hover,
+	.close:focus {
+	  color: gray;
+	  text-decoration: none;
+	  cursor: pointer;}
+
+	@font-face {
+	    font-family: "geosanslightregular";
+	    src: url("fonts/geosanslight.woff2") format('woff2'),
+	    url("fonts/geosanslight.woff") format('woff');
+	    font-weight: normal;
+	    font-style: normal;}
+	@font-face {
+	    font-family: "geosanslightmedium_italic";
+	    src: url("fonts/geosanslight-oblique.woff2") format('woff2'),
+	    url("fonts/geosanslight-oblique.woff") format('woff');
+	    font-weight: normal;
+	    font-style: normal;}
 
 </style>
 
