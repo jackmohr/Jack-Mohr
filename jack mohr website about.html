@@ -142,9 +142,12 @@
 			.iconA:hover, .iconB:hover {color: purple;}
 			.iconA:hover .icon-textA {visibility: visible; color: white;}
 			.iconB:hover .icon-textB {visibility: visible; color: white;}
-
-			@media only screen and (max-width: 1100px) 
-			{.about {font-size: 16px; line-height: 2;}}
+				
+		@media screen and (max-height: 700px) {
+			.logo img {width: 50px; margin-top: 10px;}
+			.sidenav a {font-size: 14px;}
+			.about {font-size: 16px; line-height: 2; top: 40vh; width: 60vw;}
+			.jack_head {width: 70vw; max-width:70vw; height: auto;}
 
 			@font-face {
 		    font-family: "geosanslightregular";
