@@ -245,6 +245,8 @@
 
 <script>
 
+	if (screen.width < 850) {document.getElementsByClassName("sidenav1").style.display="none";}
+	
 	function scrollWin() {window.scrollTo(0,0);}
 	function onClick(element) 
 		{document.getElementById("modal-image").src = element.src;
