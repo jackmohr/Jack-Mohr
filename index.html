@@ -9,6 +9,22 @@
 	<link rel="icon" href="Jacks_Photos/jack mohr icon.png">
 </head>
 	
+
+<script>	
+		if (screen.width < 850) {document.location = "jack mohr website portfolio.html";}
+
+		function scrollWin() {window.scrollTo(0,0);}
+
+		function LetsGetFaded() {
+			setTimeout(function() {
+				document.body.style.animation = 'fadeout .5s';
+	       		document.body.style.WebkitAnimation = 'fadeout .5s';
+	       			setTimeout(function() {
+	       				window.location.href = 'jack mohr website portfolio.html'}
+	       		,450);}
+	       	,0);}
+</script>
+	
 <body onload="scrollWin()"> 
 
 	<div class="logo" id="logo">
@@ -64,14 +80,6 @@
 
 	.sidenav1 a:hover {color: hotpink;}
 
-	@media screen and (max-width: 850px) {
-		
-		.Home img {margin-top: 110px; margin-left: 10vw; width: auto; height: 80vh; position: fixed;}
-		.logo img {width: 50px; margin-top: 10px;}
-		.logo {top: 105px;}
-		.sidenav1 {top: 30vh;}
-		.sidenav a {font-size: 14px;}}
-
 	.Home {
 		position: absolute;
 		left: 25vw;
@@ -121,19 +129,6 @@
     font-style: normal;}
 			
 </style>
-	<script>	
-		if (screen.width < 850) {document.location = "jack mohr website portfolio.html";}
-
-		function scrollWin() {window.scrollTo(0,0);}
-
-		function LetsGetFaded() {
-			setTimeout(function() {
-				document.body.style.animation = 'fadeout .5s';
-	       		document.body.style.WebkitAnimation = 'fadeout .5s';
-	       			setTimeout(function() {
-	       				window.location.href = 'jack mohr website portfolio.html'}
-	       		,450);}
-	       	,0);}
-	</script>
+	
 </body>
 </html>
