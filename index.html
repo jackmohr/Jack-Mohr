@@ -65,7 +65,7 @@
 	.sidenav1 a:hover {color: hotpink;}
 
 	@media screen and (max-width: 850px) {
-		document.location = "jack mohr website portfolio.html";
+		
 		.Home img {margin-top: 110px; margin-left: 10vw; width: auto; height: 80vh; position: fixed;}
 		.logo img {width: 50px; margin-top: 10px;}
 		.logo {top: 105px;}
@@ -122,6 +122,8 @@
 			
 </style>
 	<script>	
+		if (screen.width < 850) {document.location = "jack mohr website portfolio.html";}
+
 		function scrollWin() {window.scrollTo(0,0);}
 
 		function LetsGetFaded() {
