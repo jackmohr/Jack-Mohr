@@ -11,7 +11,8 @@
 	
 
 <script>	
-		if (screen.width < 850) {document.location = "jack mohr website portfolio.html";}
+		if (screen.width < 850) {document.location = "jack mohr website portfolio.html";
+					document.getElementsByClassName("nomore").style.display="none";}
 
 		function scrollWin() {window.scrollTo(0,0);}
 
@@ -32,7 +33,7 @@
 		<img src="Jacks_Photos/jack mohr logo.png" alt="logo"></div>
 
 	<div class="sidenav1" id="sidenav1">
-		<a href="#top">Home</a>
+		<span class="nomore"><a href="#top">Home</a></span>
 	    <a style="cursor: pointer;" onclick="LetsGetFaded()">Portfolio</a>
 	    <a href="jack mohr website about.html">About</a></div>
 
