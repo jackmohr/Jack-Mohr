@@ -168,7 +168,7 @@
 	  text-decoration: none;
 	  cursor: pointer;}
 	
-	.right_arrow, .left_arrow {visibility: hidden;}
+	.right_arrow, .left_arrow {visibility: hidden; z-index: 2;}
 
 	@font-face {
 	    font-family: "geosanslightregular";
@@ -199,8 +199,8 @@
 		.sidenav1 {top: 15vh; height: 0px;}
 		.moveon {width: 0vw; visibility: hidden; display: none;}
 			
-			.left_arrow {top: 500px; right: 52vw; z-index: 2;}
-			.right_arrow {top: 500px; right: 44vw; z-index: 2;}
+			.left_arrow {visibility: visible; top: 500px; right: 52vw; z-index: 2;}
+			.right_arrow {visibility: visible; top: 500px; right: 44vw; z-index: 2;}
 	}
 
 </style>
