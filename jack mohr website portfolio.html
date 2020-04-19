@@ -194,7 +194,7 @@
 		.logo img {width: 50px}
 		
 		.sidenav a {font-size: 0px;}
-		.sidenav1 {width: 0vw; visibility: hidden; display: none;}
+		.moveon {width: 0vw; visibility: hidden; display: none;}
 	}
 
 </style>
@@ -206,8 +206,8 @@
 		<img src="Jacks_Photos/jack mohr logo2.png" alt="logo"></a></div>
 
 	<div class="sidenav1" id="sidenav1">
-		<a href="index.html">Home</a>
-	    <a href="#top">Portfolio</a>
+		<span class="moveon"><a href="index.html">Home</a>
+			<a href="#top">Portfolio</a></span>
 	    <a href="jack mohr website about.html">About</a></div>
 
 <!------------------------------------------------------GALLERY BODY---------------------------------------------------->
@@ -252,7 +252,7 @@
 
 <script>
 
-	if (screen.width < 850) {document.getElementsByClassName("sidenav1").style.visibility="hidden";}
+	if (screen.width < 850) {document.getElementsByClassName("moveon").style.visibility="hidden";}
 	
 	function scrollWin() {window.scrollTo(0,0);}
 	function onClick(element) 
