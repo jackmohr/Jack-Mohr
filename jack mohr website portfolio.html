@@ -205,8 +205,8 @@
 		.sidenav1 {top: 15vh; height: 0px;}
 		.moveon {width: 0vw; visibility: hidden; display: none;}
 			
-			.left_arrow {visibility: visible; top: 498px; right: 58vw; z-index: 2;}
-			.right_arrow {visibility: visible; top: 498px; right: 40vw; z-index: 2;}
+		.left_arrow {visibility: visible; top: 498px; right: 58vw;}
+		.right_arrow {visibility: visible; top: 498px; right: 40vw;}
 	}
 
 </style>
@@ -256,8 +256,8 @@
 	<div class="modal" id="myModal" onkeypress="DownToFuck()">
 	  <img class="modal-content" id="modal-image" onclick="ChangeImage(1)">
 		<a class="close" onclick="close_modal()">&Xopf;</a>
-		<div class="left_arrow" onclick="ChangeImage(-1)"> < </div>
-		<div class="right_arrow" onclick="ChangeImage(1)"> > </div>
+		<a class="left_arrow" onclick="ChangeImage(-1)"> < </a>
+		<a class="right_arrow" onclick="ChangeImage(1)"> > </a>
 	</div>	
 
 <!------------------------------------------------------MODAL JAVASCRIPT---------------------------------------------------->
