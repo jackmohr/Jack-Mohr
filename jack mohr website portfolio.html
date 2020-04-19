@@ -167,6 +167,8 @@
 	  color: gray;
 	  text-decoration: none;
 	  cursor: pointer;}
+	
+	.right_arrow, .left_arrow {visibility: hidden;}
 
 	@font-face {
 	    font-family: "geosanslightregular";
@@ -196,6 +198,9 @@
 		
 		.sidenav1 {top: 15vh; height: 0px;}
 		.moveon {width: 0vw; visibility: hidden; display: none;}
+			
+			.left_arrow {top: 500px; right: 52vw;}
+			.right_arrow {top: 500px; right: 44vw;}
 	}
 
 </style>
@@ -245,8 +250,8 @@
 	<div class="modal" id="myModal" onkeypress="DownToFuck()">
 	  <img class="modal-content" id="modal-image" onclick="ChangeImage(1)">
 		<a class="close" onclick="close_modal()">&Xopf;</a>
-		<div class="left_arrow" onclick="ChangeImage(-1)">  </div>
-		<div class="right_arrow" onclick="ChangeImage(1)">  </div>
+		<div class="left_arrow" onclick="ChangeImage(-1)"> < </div>
+		<div class="right_arrow" onclick="ChangeImage(1)"> > </div>
 	</div>	
 
 <!------------------------------------------------------MODAL JAVASCRIPT---------------------------------------------------->
