@@ -168,9 +168,18 @@
 	  text-decoration: none;
 	  cursor: pointer;}
 	
-	.right_arrow, .left_arrow {
+	.left_arrow {
 		position: absolute; 
-		visibility: hidden; 
+	 	top: 4.5vh;
+	 	right: 35vw; 
+		z-index: 2; 
+		font-size: 30px; 
+		font-weight: bold; }
+	
+	.right_arrow {
+		position: absolute; 
+	 	top: 4.5vh;
+	 	right: 37vw; 
 		z-index: 2; 
 		font-size: 30px; 
 		font-weight: bold; }
@@ -204,8 +213,8 @@
 		.sidenav1 {top: 15vh; height: 0px;}
 		.moveon {width: 0vw; visibility: hidden; display: none;}
 			
-		.left_arrow {visibility: visible; top: 498px; right: 58vw;}
-		.right_arrow {visibility: visible; top: 498px; right: 40vw;}
+		.left_arrow {top: 498px; right: 58vw;}
+		.right_arrow {top: 498px; right: 40vw;}
 	}
 
 </style>
