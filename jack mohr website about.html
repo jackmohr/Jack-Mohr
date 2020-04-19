@@ -15,9 +15,9 @@
 			<img src="Jacks_Photos/jack mohr logo2.png" alt="logo"></a></div>
 
 	<div class="sidenav1" id="sidenav1">
-		<a href="index.html">Home</a>
+		<span class="moveon"><a href="index.html">Home</a></span>
 	    <a style="cursor: pointer;" onclick="LetsGetFaded()">Portfolio</a>
-	    <a href="#top">About</a></div>
+		<span class="moveon"><a href="#top">About</a></div></span>
 	
 	<div class="jack_head">
 		<img src="Jacks_Photos/jack mohr headshot.jpg"></div>
@@ -107,11 +107,16 @@
 	.iconA:hover, .iconB:hover {color: purple;}
 
 @media screen and (max-width: 850px) {
-	.logo img {width: 50px; margin-top: 10px;}
-	.sidenav a {font-size: 14px;}
+	
+	.logo {top: 10px;}
+	.logo img {width: 50px}
+	.sidenav1 {top: 15px;}
+	
 	.about {font-size: 16px; line-height: 2; top: 260px; left: 120px; width: 200px;}
 	.jack_head {margin-top: 50px; left: 150px; width: 150px; height: auto;}
-	.logo {top: 105px;}
+
+	.moveon {visibility: hidden; display: none;}
+	
 	.iconA {top: 540px; left: 55vw;}
 	.iconB {top: 540px; left: 63vw;}}
 
