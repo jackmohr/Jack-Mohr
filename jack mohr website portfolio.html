@@ -174,7 +174,7 @@
 	 	right: 40.8vw; 
 		z-index: 2; 
 		font-size: 30px; 
-		font-weight: bold; }
+		font-weight: bold;}
 	
 	.right_arrow {
 		position: absolute; 
@@ -182,7 +182,7 @@
 	 	right: 39.3vw; 
 		z-index: 2; 
 		font-size: 30px; 
-		font-weight: bold; }
+		font-weight: bold;}
 
 	@font-face {
 	    font-family: "geosanslightregular";
@@ -279,20 +279,11 @@
 		{document.getElementById("modal-image").src = element.src;
   		document.getElementById("myModal").style.display = "block";}
 	function close_modal() 
-		{document.getElementById("myModal").style.display = "none"; var Pic_Index = 1;}
+		{document.getElementById("myModal").style.display = "none";}
 
 	var Pic_Index = 1;
 	ShowImage(Pic_Index);
 	
-	window.addEventListener("keydown", DownToFuck);
-	function DownToFuck(event) {
-		switch (event.keyCode)
-			{case 27: close_modal(); break;
-			 case 37: ChangeImage(-1); break;
-			 case 39: ChangeImage (1); break;
-			 case 32: ChangeImage (1); break;
-			 case 13: ChangeImage (1); break;}}
-
 	function ChangeImage(n) 
 		{ShowImage(Pic_Index += n);}
 	function ShowImage(n) {
@@ -303,6 +294,18 @@
 	  if (n < 1) {Pic_Index = Pictures.length}
 
 	Modal_Image.src = Pictures[Pic_Index-1].src}
+	
+	
+	window.addEventListener("keydown", DownToFuck);
+	function DownToFuck(event) {
+		switch (event.keyCode)
+			{case 27: close_modal(); break;
+			 case 37: ChangeImage(-1); break;
+			 case 39: ChangeImage (1); break;
+			 case 32: ChangeImage (1); break;
+			 case 13: ChangeImage (1); break;}}
+
+
 
 </script>	
 </body>
