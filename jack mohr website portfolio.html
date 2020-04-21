@@ -271,7 +271,7 @@
 
 <script>
 
-	if (screen.width < 850) {document.getElementsByClassName("moveon").style.visibility="hidden";}
+	
 	
 	function scrollWin() {window.scrollTo(0,0);}
 	function onClick(element) 
@@ -281,11 +281,12 @@
 		{document.getElementById("myModal").style.display = "none";}
 
 	
+	var Pic_Index = 1;
+	ShowImage(Pic_Index);
+	
 	
 	function ChangeImage(n) 
-		{var Pic_Index = 1;
-	ShowImage(Pic_Index);
-			ShowImage(Pic_Index += n);}
+		{ShowImage(Pic_Index += n);}
 	function ShowImage(n) {
 	  var Pictures = document.getElementsByClassName("Images");
 	  var Modal_Image = document.getElementById("modal-image");
