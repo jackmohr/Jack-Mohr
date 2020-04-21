@@ -173,15 +173,13 @@
 		position: absolute; 
 	 	top: 46vh;
 	 	left: 200px; 
-		 
 		font-size: 40px; 
 		font-weight: bold;}
 	
 	.right_arrow {
 		position: absolute; 
 	 	top: 46vh;
-	 	left: 850px; 
-		
+	 	left: 850px;
 		font-size: 40px; 
 		font-weight: bold;}
 
@@ -282,11 +280,12 @@
 	function close_modal() 
 		{document.getElementById("myModal").style.display = "none";}
 
-	var Pic_Index = 1;
-	ShowImage(Pic_Index);
+	
 	
 	function ChangeImage(n) 
-		{ShowImage(Pic_Index += n);}
+		{var Pic_Index = 1;
+	ShowImage(Pic_Index);
+			ShowImage(Pic_Index += n);}
 	function ShowImage(n) {
 	  var Pictures = document.getElementsByClassName("Images");
 	  var Modal_Image = document.getElementById("modal-image");
